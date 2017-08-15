@@ -28,8 +28,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
-        h1 {
-            color: #fff
+        h3 {
+            color: #add2e2
         }
         
         #bigbig {
@@ -40,7 +40,7 @@
         #beginning {
             width: 100%;
             height: 400px;
-            margin-bottom: 200px;
+            margin-bottom: 300px;
         }
         
         .first {
@@ -49,6 +49,8 @@
             margin-right: 200px;
             left: 50px;
             right: 50px;
+            line-height: 200%;
+            font-size: 16px;
         }
         
         p {
@@ -82,7 +84,8 @@
             overflow-x: hidden;
             overflow-y: scroll;
             display: block;
-            margin-top: 30px
+            margin-top: 30px;
+            margin-left: 85px
             /* margin-right: auto;
                 margin-left: auto */
         }
@@ -93,12 +96,13 @@
             width: 180px;
             margin-top: 50px;
             box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+            margin-left: 85px;
             /* margin-left: 20px */
             /* 它跟下面btn-group是同步变化的 */
         }
         
         #tips {
-            margin-left: 262px;
+            margin-left: 210px;
             font-size: 14px;
             display: inline-block;
             margin-top: 8px;
@@ -111,12 +115,16 @@
         }
         
         .btn-group>.btn:first-child {
-            margin-left: 0;
+            margin-left: 85px;
             -webkit-margin-top-collapse: 10px;
             margin-top: 50px;
             box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
             /* margin-left: 20px */
             /* 它跟上面的search是同步变化的 */
+        }
+        
+        .bootstrap-select.btn-group .dropdown-menu {
+            margin-left: 85px
         }
         
         .test {
@@ -129,6 +137,38 @@
         
         select {
             padding: 20% 10% 10% 0;
+        }
+        
+        .left {
+            display: inline-block;
+            width: 50%;
+            height: 600px;
+            margin-left: 120px;
+        }
+        
+        .right {
+            display: inline-block;
+            width: 20%;
+            height: 400px;
+            margin-right: 150px;
+            line-height: 200%;
+            font-size: 16px;
+        }
+        
+        .left2 {
+            display: inline-block;
+            width: 50%;
+            height: 700px;
+            margin-left: 120px;
+        }
+        
+        .right2 {
+            display: inline-block;
+            width: 27%;
+            height: 400px;
+            margin-right: 150px;
+            line-height: 200%;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -149,7 +189,13 @@
             <p>短时间内，外人很难弄清这些莆田的大老板们到底投资了多少家医院。目前有官方认证的，还是2014年国家卫计委主管的《健康报》提到的，全国从事医疗产业的莆田人达6万多、建立的民营医院达8000多家，由此可以一窥莆田医帮的势力。尽管控制了大量的民营资源，莆田医帮的大佬们却始终隐身幕后，旗下的医院看起来毫无联系，同一集团的医院可能名称各异，而名称相同的医院又可能隶属不同集团。</p>
             <br>
             <p>将近40年发展过后，他们又将呈现怎样的面貌？从凤凰网仅公布的400多家莆田系医院名单中，我们也许可以借此一窥莆田医帮所编织的巨大的关系网。</p>
-
+            <br>
+            <br>
+        </div>
+        <div style="text-align:center">
+            <p style="color:#add2e2;font-size:26px;">发家沪苏粤
+            </p>
+            <hr width="72%">
         </div>
         <div id="main"></div>
         <script>
@@ -512,7 +558,8 @@
         <div class="first">
             <p>根据已有数据显示，莆田医帮的投资呈现出地域性特点，华东占据显著地位，其中又以江浙沪最为密集。华南地区近几年发展迅速，西南地区稳步增长。个人和家族的投资也体现出地域性特点，各大家族划区而治，除了连锁医院，鲜少出现在他姓地盘。如苏氏两兄弟（苏其远、苏其林），基本盘踞广东附近。詹氏三兄弟（詹国团、詹国营、詹国连）以上海为中心，密集投资。</p>
             <br>
-            <p>早在2009年，长沙晚报对莆田系医院就进行了详细的报道，从最早租赁科室，到托管医院，再到自建医院，一些有想法且实力雄厚的大老板们逐渐开发出新的盈利方式，并形成自己的势力范围，其中最具代表性的便是“陈、詹、林、黄”四大家族。又一个10年即将结束，莆田的大家族们又经历了怎样的变化？</p>
+            <br>
+            <br>
         </div>
 
         <!-- <div class="first">
@@ -524,34 +571,69 @@
                 <br>
             </div> -->
         <div style="text-align:center">
+            <p style="color:#add2e2;font-size:26px;">聚群詹林陈
+            </p>
+            <hr width="72%">
+        </div>
+        <div class="first">
+            <br>
+            <p>早在2009年，长沙晚报对莆田系医院就进行了详细的报道，从最早租赁科室，到托管医院，再到自建医院，一些有想法且实力雄厚的大老板们逐渐开发出新的盈利方式，并形成自己的势力范围，其中最具代表性的便是“陈、詹、林、黄”四大家族。又一个10年即将结束，莆田的大家族们又经历了怎样的变化？</p>
+        </div>
+
+        <div style="text-align:center">
             <img src="未标题-3.jpg" style="width:70%"></img>
         </div>
 
         <div class="first">
+            <br>
+            <p>以上网络显示了凤凰网名单中的有效医院股东和高管的信息，明显的两大群集分别以詹氏和林氏为代表，四大家族并非各自为营，抱团现象明显，除此之外还有一个中等大小的团体，以卓姓为中心点，其他节点出现姓氏集中在四大家族；而其余皆为5人以下的小团体，不成体系。</p>
+            <br>
+            <p>同时，四大家族出现的权重大不相同，从绝对数量来看，以林姓和詹姓最多；陈姓次之，黄姓最少。从组织性来看，林姓和詹姓抱团现象更为明显，是两大群集主导的姓氏，陈氏相对数量较多，但组织性差，未形成大型独立组织行为。黄氏数量最少，且结构性最差。除了传统的四大家族外，还有一些姓氏出现频率颇高，如卓氏、吴氏、杨氏、游氏等，以附属身份挂靠在詹氏、林氏、陈氏之下。</p>
+            <br>
+            <br>
+            <br>
+        </div>
+
+        <div style="text-align:center">
+            <p style="color:#add2e2;font-size:26px;">隐身莆家人
+            </p>
+            <hr width="72%">
+        </div>
+        <div class="first">
+            <br>
             <p>针对两大族群进行更为详细的分析，詹氏和林氏无论从关系强度还是广度来讲，都是最大的。詹林相比，林姓的组织结构相对更为紧凑，无论是介数（betweenness）还是连接数量程度（degree）都相对较高。</p>
             <br>
+        </div>
+
+
+        <div class="left">
+            <img src="【图】詹家2.jpg" style="width:90%"></img>
+        </div>
+        <div class="right">
             <p>詹氏关系网中，处于中心位置的为詹国连和詹阳斌，他们为堂兄弟的关系，其他节点位置，出现各种姓氏，体现了詹氏门徒众多的特点，与林氏关系网不同的是，在詹氏关系网中，仍有林氏扮演着相对重要的角色。</p>
         </div>
 
-
-        <div style="text-align:center">
-            <img src="【图】詹家2.jpg" style="width:45%"></img>
-        </div>
         <div class="group2">
             <script type="text/javascript" src="./group1/WebContent/js/main.js"></script>
 
         </div>
-
-        <div class="first">
-            <br>
-            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="left2">
+            <img src="【图】林家.jpg" style="width:90%"></img>
+        </div>
+        <div class="right2">
             <p>林氏关系网中，林玉明处于中心位置，其他处于节点位置的也多为林氏成员，家族特点浓厚，结构紧密；詹氏出现频次很低，且地位相对弱势。</p>
             <br>
             <p>陈氏虽然人员众多，但基本分散在两大家族的关系网中，此前曾有报道称，陈氏在四大家族中最为低调，但投资范围颇广，在各大家族之间，游刃有余。黄氏在该关系网中的地位相对其他三个家族，十分弱势。</p>
         </div>
-        <div style="text-align:center">
-            <img src="【图】林家.jpg" style="width:40%"></img>
-        </div>
+
+
+
+        <br>
+        <br>
 
         <div class="group1">
             <script type="text/javascript" src="./group2/WebContent/js/group2.js"></script>
@@ -561,13 +643,16 @@
 
 
         <div class="first">
+            <br>
+            <br>
             <p>相对比较重要的莆田医帮大佬诸如詹氏三兄弟、陈国兴、翁国亮纷纷转为幕后投资，詹氏三兄弟通过上海华衡投资（集团）有限公司控制嘉兴新安医院；陈国兴通过上海美迪亚医院投资集团有限公司，亦控制了多家医院；翁国亮借助已在香港上市的华夏医疗集团控制了重庆爱德华医院、嘉兴曙光医院和珠海九龙医院等，但根据工商信息查询，只能得到杨春法为其法人的信息。同时，他们的投资领域除了医院，正逐渐转向医疗器械、医药制作、房地产等其他领域，努力摘除以往“莆田游医”所具有的特征，借助外资等方式，改进企业形象。如黄氏黄德锋，近年已逐渐从医院行业成功转向酒店管理、营销顾问、文化传播领域。</p>
             <br>
             <p>相比以往通过“**男科”、“**女子医院”这样的标签断言该医院所属情况，如今已很难再从名字上得知其是否为莆田医帮旗下的医院。它们中的一部分关门了，而另外一部分改头换面，变换名字，悄无声息又出现在各城市当中。</p>
 
             <br>
             <br>
-            <h1>注释</h1>
+            <h3>注释</h3>
+            <br>
             <p>1.数据来源：凤凰网披露的莆田医院名单、国家企业信用信息公示系统，天眼查、企查查、启信宝等。
             </p>
             <p>2.凤凰网共收录441家莆田系医院，其中能够查询到有效信息的医院共374家，故有效数据为374家。
