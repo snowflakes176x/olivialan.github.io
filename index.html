@@ -1,0 +1,663 @@
+<html>
+
+<head>
+    <title>莆田医网</title>
+    <meta charset="utf-8">
+    <script src="./map/echarts.min.js"></script>
+    <script type="text/javascript" src="./改2/WebContent/js/jquery-1.11.1.js"></script>
+    <script src="./map/china.js"></script>
+    <!--要异步加载json的时候要记得引用：-->
+    <script type="text/javascript" src="./map/jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./hospital_siukay/bootstrap-select-1.12.4/dist/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="./hospital_siukay/bootstrap-select-1.12.4/dist/js/bootstrap-select.min.js"></script>
+    <script src="./hospital_siukay/bootstrap/js/bootstrap.js"></script>
+
+    <script src="./hospital_siukay/data.js"></script>
+
+    <!-- (Optional) Latest compiled and minified JavaScript translation files  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script> -->
+    <link rel="stylesheet" href="./hospital_siukay/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./hospital_siukay/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="loaders.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./hospital_siukay/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        h1 {
+            color: #fff
+        }
+        
+        #bigbig {
+            width: 100%;
+            background-color: #252525;
+        }
+        
+        #beginning {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 300px;
+        }
+        
+        .first {
+            margin: 10px;
+            margin-left: 200px;
+            margin-right: 200px;
+            left: 50px;
+            right: 50px;
+        }
+        
+        p {
+            color: white;
+        }
+        
+        #main {
+            height: 760px;
+            width: 90%;
+            margin: 0px;
+            background-color: #252525;
+        }
+        
+        #aa {
+            width: 100%;
+            height: 400px;
+            margin: 0%;
+            /* background-color: #272727; */
+            background-image: url("./hospital_siukay/img/background.jpg")
+        }
+        
+        #result {
+            color: gray;
+            font-size: 14px;
+            text-shadow: 1rem;
+            text-align: center;
+            width: 550px;
+            height: 200px;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            display: block;
+            margin-top: 30px
+            /* margin-right: auto;
+            margin-left: auto */
+        }
+        
+        #search {
+            background-color: #6092a5;
+            border-color: rgba(100, 100, 100, 0.1);
+            width: 180px;
+            margin-top: 50px;
+            box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+            /* margin-left: 20px */
+            /* 它跟下面btn-group是同步变化的 */
+        }
+        
+        #tips {
+            margin-left: 262px;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 8px;
+            color: #fff
+        }
+        
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+            width: 180px;
+            /* margin:20px */
+        }
+        
+        .btn-group>.btn:first-child {
+            margin-left: 0;
+            -webkit-margin-top-collapse: 10px;
+            margin-top: 50px;
+            box-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+            /* margin-left: 20px */
+            /* 它跟上面的search是同步变化的 */
+        }
+        
+        .test {
+            color: #252525;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            /* line-height: 1.6rem; */
+        }
+        
+        select {
+            padding: 20% 10% 10% 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigbig">
+        <div id="beginning">
+            <img src="toppic.jpg">aaa</img>
+            <!--放头图-->
+        </div>
+        <div class="first">
+            <p>2016年魏则西死亡事件过后，凤凰网公布了一份医院名单，这份名单上的医院分布在不同的地域，所属不同医疗领域，有着不同的法人，追本溯源却往往与福建莆田有着千丝万缕的关系，靠偏方起家的莆田系老板再次进入人们视野。</p>
+            <br>
+            <p>陈德良被誉为莆田医帮的“鼻祖”。据中国企业家网报道，上世纪80年代，陈德良靠着一张治螨虫的偏方，迅速成为莆田镇从医致富的第一人，其后带着8个徒弟行走江湖，短期内积累下不菲财富。他的弟子们也相继收受门徒，多数沾亲带故，开始原始的资本积累。随着国内医疗市场不断开放，莆田医帮不断进行着艰难的转型之路。2013年11月，新希望集团创始人刘永好、地产商冯仑、华夏医疗集团董事局主席翁国亮牵头成立中国医疗健康产业发展策略联盟，14名会员中有8位莆系老板，他们以联盟之名集体转型，目标锁定医疗行业中的高端领域。</p>
+            <br>
+            <p>从游走于中下层群体中，利用人们的羞耻之心，治疗性病皮肤病、不孕不育，到如今，面向中上层阶级，主打牙科、眼科、美容、生育等消费需求，引进创投资本，建立连锁帝国，逐渐朝着高端化的方向发展，莆田医帮正极力摆脱因“游医”带来的原罪。</p>
+            <br>
+            <p>短时间内，外人很难弄清这些莆田的大老板们到底投资了多少家医院。目前有官方认证的，还是2014年国家卫计委主管的《健康报》提到的，全国从事医疗产业的莆田人达6万多、建立的民营医院达8000多家，由此可以一窥莆田医帮的势力。尽管控制了大量的民营资源，莆田医帮的大佬们却始终隐身幕后，旗下的医院看起来毫无联系，同一集团的医院可能名称各异，而名称相同的医院又可能隶属不同集团。</p>
+            <br>
+            <p>将近40年发展过后，他们又将呈现怎样的面貌？从凤凰网仅公布的400多家莆田系医院名单中，我们也许可以借此一窥莆田医帮所编织的巨大的关系网。</p>
+
+        </div>
+        <div id="main"></div>
+        <script>
+            var data_2000 = [{
+                'name': '南昌市第五医院',
+                'value': [115.91593400000001, 28.631859999999996, 1000]
+            }, {
+                'name': '昆明西昌路医院',
+                'value': [102.69305200000001, 25.042453999999999, 500]
+            }]
+
+
+
+            //1.定义一个div，并指示将chart放进去
+            var myChart = echarts.init(document.getElementById("main"));
+
+            var options = {
+
+                baseOption: {
+                    timeline: {
+                        data: ['2000',
+                            '2001',
+                            '2002',
+                            '2003',
+                            '2004',
+                            '2005',
+                            '2006',
+                            '2007',
+                            '2008',
+                            '2009',
+                            '2010',
+                            '2011',
+                            '2012',
+                            '2013',
+                            '2014',
+                            '2015',
+                            '2016',
+                            '2017'
+                        ],
+                        show: true,
+                        top: 95,
+                        left: 370,
+                        lineStyle: {
+                            show: false,
+                        },
+                        symbolSize: 0,
+                        autoPlay: true,
+                        playInterval: 800,
+                        loop: true,
+                        label: {
+                            normal: {
+                                show: false,
+                            },
+                        },
+                        checkpointStyle: {
+                            color: "transparent",
+                            borderColor: "transparent",
+                        },
+                        controlStyle: {
+                            showPrevBtn: false,
+                            showNextBtn: false,
+                            itemSize: 40,
+                            normal: {
+                                color: '#fff',
+                                borderColor: '#fff',
+                                borderWidth: 1.5,
+                            },
+                            emphasis: {
+                                color: '#ffce22',
+                                borderColor: '#ffce22',
+                                borderWidth: 1.5,
+                            },
+
+                        }
+                    },
+                    title: {
+                        left: 100,
+                        top: 50,
+                        textStyle: {
+                            color: '#fff',
+                            fontWeight: "bold",
+                            fontSize: 100,
+                        },
+                        subtext: " * 圆点表示当年新注册的莆田医院。注册资本越大，圆点越大。",
+                        subtextStyle: {
+                            fontSize: 16,
+                        },
+                        itemGap: 20,
+                    },
+
+                    geo: {
+                        map: 'china',
+                        label: {
+                            emphasis: {
+                                show: false
+                            }
+                        },
+                        layoutSize: 10,
+                        top: 160,
+                        left: 0,
+                        zoom: 0.8,
+                        itemStyle: {
+                            normal: {
+                                areaColor: '#6092a5',
+                                borderColor: '#111',
+                            },
+                            emphasis: {
+                                areaColor: '#6092c5'
+                            }
+                        },
+                        silent: true
+
+                    },
+                    //backgroundColor: '#373737',
+                    grid: [{
+                        x: '67%',
+                        y: '40%',
+                        width: '18%',
+                        height: '48%',
+                        show: false,
+                    }, {
+                        x: '90%',
+                        y: '40%',
+                        width: '28%',
+                        height: '48%',
+                        show: false,
+                    }],
+
+                    yAxis: [{
+                        type: 'category',
+                        axisLabel: {
+                            interval: 0,
+                            textStyle: {
+                                color: '#fff'
+                            }
+                        },
+                        axisLine: {
+                            show: false,
+                        },
+                        axisTick: {
+                            show: false,
+                        },
+                        data: ['广东',
+                            '上海',
+                            '江苏',
+                            '浙江',
+                            '山东',
+                            '福建',
+                            '江西',
+                            '北京',
+                            '山西',
+                            '重庆',
+                            '湖南',
+                            '四川',
+                            '河南',
+                            '云南',
+
+                        ],
+                        splitLine: {
+                            show: false
+                        },
+                        gridIndex: 0,
+                        inverse: true,
+
+                    }, {
+                        type: 'category',
+                        axisLabel: {
+                            interval: 0,
+                            textStyle: {
+                                color: '#fff'
+                            }
+                        },
+                        axisLine: {
+                            show: false,
+                        },
+                        axisTick: {
+                            show: false,
+                        },
+                        data: ['黑龙江',
+                            '湖北',
+                            '贵州',
+                            '河北',
+                            '天津',
+                            '西藏',
+                            '安徽',
+                            '吉林',
+                            '辽宁',
+                            '内蒙古',
+                            '新疆',
+                            '甘肃',
+                            '广西',
+                            '宁夏',
+                            '陕西',
+                        ],
+                        splitLine: {
+                            show: false
+                        },
+                        gridIndex: 1,
+                        inverse: true,
+                    }],
+
+                    xAxis: [{
+                        type: 'value',
+                        min: -2,
+                        max: 55,
+                        show: false,
+                        gridIndex: 0,
+                    }, {
+                        type: 'value',
+                        min: -2,
+                        max: 55,
+                        show: false,
+                        gridIndex: 1,
+                    }],
+
+                    series: [{
+                        name: '莆田',
+                        type: 'scatter',
+                        coordinateSystem: 'geo',
+                        data: data_2000,
+                        // label: {
+                        //     emphasis: {
+                        //         show: true,
+                        //         formatter: '{b}',
+                        //     },
+                        // },
+
+                        itemStyle: {
+                            normal: {
+                                color: {
+                                    type: 'radial',
+                                    x: 0.5,
+                                    y: 0.5,
+                                    r: 0.7,
+                                    colorStops: [{
+                                        offset: 0.2,
+                                        color: "white"
+                                    }, {
+                                        offset: 0.5,
+                                        color: "#323c48"
+                                    }],
+                                    //globalCoord: false
+                                }
+                            }
+                        },
+                        blendMode: 'lighter',
+                        silent: true,
+                    }, {
+                        name: '各省数量1',
+                        type: 'bar',
+                        xAxisIndex: 0,
+                        yAxisIndex: 0,
+                        itemStyle: {
+                            normal: {
+                                color: '#fff'
+                            }
+                        },
+                        data: null,
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight',
+                                textStyle: {
+                                    color: '#373737'
+                                }
+                            },
+                        },
+                    }, {
+                        name: '各省数量2',
+                        type: 'bar',
+                        xAxisIndex: 1,
+                        yAxisIndex: 1,
+                        itemStyle: {
+                            normal: {
+                                color: '#fff'
+                            }
+                        },
+                        data: null,
+                        label: {
+                            normal: {
+                                show: true,
+                                position: 'insideRight',
+                                textStyle: {
+                                    color: '#373737',
+                                },
+                            },
+                        },
+                    }],
+
+                    visualMap: [{
+                        type: 'continuous', // 连续型
+                        min: 0, // 值域最小值，必须参数
+                        max: 5000, // 值域最大值，必须参数
+                        calculable: true, // 是否启用值域漫游
+                        show: false,
+                        inRange: {
+                            symbolSize: [5, 20]
+                        },
+                        itemWidth: 20,
+                        textStyle: {
+                            color: 'black' // 值域控件的文本颜色
+                        }
+                        // }, {
+                        //     type: 'continuous', // 连续型
+                        //     min: 0, // 值域最小值，必须参数
+                        //     max: 53, // 值域最大值，必须参数
+                        //     calculable: true, // 是否启用值域漫游
+                        //     show: false,
+                        //     inRange: {
+                        //         color: ['#323c48', '#003333'],
+                        //         // 指定数值从低到高时的颜色变化
+                        //     },
+                        //     itemWidth: 20,
+                        //     textStyle: {
+                        //         color: 'black' // 值域控件的文本颜色
+                        //     }
+                    }]
+
+
+                },
+                options: null,
+                // options: [{
+                //     title: {
+                //         text: '2000year'
+                //     },
+                //     series: [{
+                //         data: data_2000
+                //     }]
+                // }, {
+                //     title: {
+                //         text: '2001year'
+                //     },
+                //     series: [{
+                //         data: data_2001
+                //     }]
+                // }]
+
+            }
+            var all_data;
+            $.getJSON("./map/all_years.json", function(res) {
+                all_data = res;
+                options.options = res;
+                myChart.setOption(options)
+            })
+
+
+
+
+            // $.getJSON("all_years.json", function(res) {
+            //     alert(len(res[2001]))
+            // })
+
+
+            // 也可以直接异步加载！！！
+            // $.getJSON("aaa.json", function(res) {
+            //     var myChart = echarts.init(document.getElementById("main"));
+            //     myChart.setOption(res);
+            // })
+        </script>
+        <div class="first">
+            <p>根据已有数据显示，莆田医帮的投资呈现出地域性特点，华东占据显著地位，其中又以江浙沪最为密集。华南地区近几年发展迅速，西南地区稳步增长。个人和家族的投资也体现出地域性特点，各大家族划区而治，除了连锁医院，鲜少出现在他姓地盘。如苏氏两兄弟（苏其远、苏其林），基本盘踞广东附近。詹氏三兄弟（詹国团、詹国营、詹国连）以上海为中心，密集投资。</p>
+            <br>
+            <p>早在2009年，长沙晚报对莆田系医院就进行了详细的报道，从最早租赁科室，到托管医院，再到自建医院，一些有想法且实力雄厚的大老板们逐渐开发出新的盈利方式，并形成自己的势力范围，其中最具代表性的便是“陈、詹、林、黄”四大家族。又一个10年即将结束，莆田的大家族们又经历了怎样的变化？</p>
+        </div>
+
+        <!-- <div class="first">
+            <p>根据医院股东和高管形成的关系图中显示，四大家族并非各自为营，抱团现象明显，形成两个大型群集和一个中等大小的团体，其余皆为5人以下的小团体，不成气候。</p>
+            <br>
+            <p>同时，四大家族出现的权重大不相同，从绝对数量来看，以林姓和詹姓最多；陈姓次之，黄姓最少。从组织性来看，林姓和詹姓抱团现象更为明显，是两大群集主导的姓氏，陈氏相对数量较多，但组织性差，未形成大型独立组织行为。黄氏数量最少，且结构性最差。除了传统的四大家族外，还有一些姓氏出现频率颇高，如卓氏、吴氏、杨氏、游氏等，以附属身份挂靠在詹氏、林氏、陈氏之下。</p>
+            <br>
+            <p>针对两大族群进行更为详细的分析，詹氏和林氏无论从关系强度还是广度来讲，都是最大的。詹林相比，林姓的组织结构相对更为紧凑，无论是介数（betweenness）还是连接数量程度（degree）都相对较高。林氏关系网中，詹氏出现频次很低，且地位相对弱势；而詹氏关系网中，仍有林氏扮演着相对重要的角色。陈氏虽然人员众多，但基本分散在两大家族的关系网中，此前曾有报道称，陈氏在四大家族中最为低调，但投资范围颇广。黄氏在该关系网中的地位相对其他三个家族，十分弱势。</p>
+            <br>
+        </div> -->
+        <div style="text-align:center">
+            <img src="未标题-3.jpg" style="width:70%"></img>
+        </div>
+
+        <div class="first">
+            <p>针对两大族群进行更为详细的分析，詹氏和林氏无论从关系强度还是广度来讲，都是最大的。詹林相比，林姓的组织结构相对更为紧凑，无论是介数（betweenness）还是连接数量程度（degree）都相对较高。</p>
+            <br>
+            <p>詹氏关系网中，处于中心位置的为詹国连和詹阳斌，他们为堂兄弟的关系，其他节点位置，出现各种姓氏，体现了詹氏门徒众多的特点，与林氏关系网不同的是，在詹氏关系网中，仍有林氏扮演着相对重要的角色。</p>
+        </div>
+
+
+        <div style="text-align:center">
+            <img src="【图】詹家2.jpg" style="width:45%"></img>
+        </div>
+
+        <div class="group1">
+            <script type="text/javascript" src="./group1/WebContent/js/main.js"></script>
+
+        </div>
+
+        <div class="first">
+            <br>
+            <br>
+            <p>林氏关系网中，林玉明处于中心位置，其他处于节点位置的也多为林氏成员，家族特点浓厚，结构紧密；詹氏出现频次很低，且地位相对弱势。</p>
+            <br>
+            <p>陈氏虽然人员众多，但基本分散在两大家族的关系网中，此前曾有报道称，陈氏在四大家族中最为低调，但投资范围颇广，在各大家族之间，游刃有余。黄氏在该关系网中的地位相对其他三个家族，十分弱势。</p>
+        </div>
+        <div style="text-align:center">
+            <img src="【图】林家.jpg" style="width:40%"></img>
+        </div>
+
+
+        <div class="first">
+            <p>相对比较重要的莆田医帮大佬诸如詹氏三兄弟、陈国兴、翁国亮纷纷转为幕后投资，詹氏三兄弟通过上海华衡投资（集团）有限公司控制嘉兴新安医院；陈国兴通过上海美迪亚医院投资集团有限公司，亦控制了多家医院；翁国亮借助已在香港上市的华夏医疗集团控制了重庆爱德华医院、嘉兴曙光医院和珠海九龙医院等，但根据工商信息查询，只能得到杨春法为其法人的信息。同时，他们的投资领域除了医院，正逐渐转向医疗器械、医药制作、房地产等其他领域，努力摘除以往“莆田游医”所具有的特征，借助外资等方式，改进企业形象。如黄氏黄德锋，近年已逐渐从医院行业成功转向酒店管理、营销顾问、文化传播领域。</p>
+            <br>
+            <p>相比以往通过“**男科”、“**女子医院”这样的标签断言该医院所属情况，如今已很难再从名字上得知其是否为莆田医帮旗下的医院。它们中的一部分关门了，而另外一部分改头换面，变换名字，悄无声息又出现在各城市当中。</p>
+
+            <br>
+            <br>
+            <h1>注释</h1>
+            <p>1.数据来源：凤凰网披露的莆田医院名单、国家企业信用信息公示系统，天眼查、企查查、启信宝等。
+            </p>
+            <p>2.凤凰网共收录441家莆田系医院，其中能够查询到有效信息的医院共374家，故有效数据为374家。
+            </p>
+            <p>3.参考报道《【独家】莆田医帮“带头大哥”陈德良》，中国企业家网， http://www.iceo.com.cn/com2013/2015/0605/299414.shtml 《福建莆田医疗资本浮现四大家族 切全国半壁江山》，网易新闻中心， http://news.163.com/09/0212/10/51UP4BSV0001124J.html
+            </p>
+            <p>4.介数（betweenness），衡量该个体在关系中的连接性，以方块大小表示，数值越大，表示其作为组织中的桥梁存在，掌握更多信息；连接数量程度（degree），衡量该个体强度，以颜色深浅表示，即颜色越深，代表和更多人交往</p>
+
+            <br>
+            <br>
+        </div>
+
+        <div class="loader" style="text-align:center">
+            <div class="ball-pulse">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <div id="aa">
+            <div class="container">
+                <div>
+                    <select class="selectpicker" id="prov">
+                        </select>
+
+                    <select class="selectpicker" id="county">
+                        </select>
+                    <button type="button" class="btn btn-primary" id="search">我要搜索</button>
+
+                </div>
+                <div id='result'><br><br><br><br>看看你所在的城市是否有“莆田系”医院，<br>搜索之后将显示医院名单
+                    <!-- <img src="img/background.jpg" alt="a"> -->
+                </div>
+                <div id="tips">
+                    * 曾经易名的医院将通过（别名：）的方式呈现
+                </div>
+                <script>
+                    Object.keys(list).forEach(function(i) {
+                        $('#prov').append($('<option>' + i + '</option>)'));
+                    });
+
+                    aha();
+
+                    $('#prov').on('hidden.bs.select', function() {
+                        aha();
+                    });
+
+                    function aha() {
+                        var prov = $('#prov').val();
+                        var county = Object.keys(list[prov]);
+                        $('#county').children().remove();
+                        county.forEach(function(i) {
+                            $('#county').append($('<option>' + i + '</option>)'));
+                        });
+                        $('#county').selectpicker('refresh');
+                        $('#county').selectpicker('val');
+
+                    }
+
+                    // $('#county').on('hidden.bs.select', function() {
+                    //     var prov = $('#prov').val();
+                    //     var county = $('#county').val();
+                    //     // 下面这个输出选的值
+                    //     console.log(list[prov][county]);
+                    // });
+
+
+                    $('#search').on('click', function() {
+
+                        var prov = $('#prov').val();
+                        var county = $('#county').val();
+                        var resultList = list[prov][county]
+
+                        // 下面这个输出选的值
+                        console.log(list[prov][county]);
+
+                        $('#result').html(""); //清空原本text
+                        resultList.forEach(function(i) {
+                            // $('#result').append(i + '<br>');
+                            $('#result').append('<p class="test">' + i + '</p>');
+
+                        });
+                    });
+                </script>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
