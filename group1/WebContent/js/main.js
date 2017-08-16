@@ -1,4 +1,4 @@
-var PList = [{
+var PList_11 = [{
         id: "P0",
         name: "黄德锋",
         photo: "",
@@ -8,7 +8,7 @@ var PList = [{
         id: "P1",
         name: "黄德新",
         photo: "",
-        information: "周永康长子，出生于1972年。/曾任北京中旭阳光能源科技股份有限公司董事长，从事倒卖油田及油井设备、能源信息化生意，亦以妻子黄婉、岳母詹敏利的名义参股四川商人吴兵、刘汉等的旅游和水电开发，并与白手套米晓东一起涉足北京房地产生意。周滨“身材高大，眼睛细长”，本科毕业于西南石油大学，与落马的中石油高管李华林、王道富和冉新权等是校友。周滨1993年前后赴石油公司聚集的美国德州大学达拉斯分校攻读石油相关专业的研究生学位,他还持有美国飞机驾驶牌（FAA牌照）。/周滨的大学同学称，周滨在美国留学期间就开始做些生意，比如通过关系将外资的石油设备卖给中国的石油企业，令同学们“羡慕不已”。不过，周滨还是顺利毕业，甚至获得了荣誉学生的奖励。/在德州，周滨遇到了后来的妻子黄婉。两人婚后育有两个孩子。2001年后，周滨夫妇将重心转移到国内。周滨回国后曾在全球知名的油田服务公司斯伦贝谢供职，当时他的名片职务是“工程师”。/知情人士称“2003年前后，周滨开始创立自己的公司。当时的印象还比较低调、随和”。/周滨不是一个成功的企业家，他的主要生意方式是以低价获得稀缺资源和合同，然后再高价卖出——这种方式在计划经济时代被称为“投机倒把”，1980年代后成为一种“官二代”常见的商业盈利模式。/周滨曾在2007年前后以一两千万元低价获得长庆油田高产区块，转手倒卖获得5.5亿元暴利。这也成为中石油高管落马的重要线索。/“倒卖油田这种事，都是拼背景，但是谁有周滨硬呢？我们最后只能甘拜下风。”一位曾经与周滨竞争同一项目的人士向财新记者说到。/2009年底，周滨受让其岳母詹敏利持有的中旭阳光石油天"
+        information: "周永康长子，出生于1972年。/曾任"
     },
     {
         id: "P2",
@@ -62,7 +62,7 @@ var PList = [{
         id: "P10",
         name: "吴剑煌",
         photo: "",
-        information: "周永康三弟媳，北京宏汉实际控制人，鸿丰钾矿大股东。江阴奔跃奥迪4S店老板，与中石油旗下昆仑能源合资成立无锡中油，销售液化天然气。/周玲英个矮，人称“矮玲英”，是无锡锡山区厚桥街道的西前头村北安乐桥人。其父做过无锡县坊前镇党委书记、无锡县商业局长。丈夫周元青是惠山区国土局副局长，周玲英则长袖善舞。她先在厚桥供销社做营业员，后去厚桥食品站，做过站长，再调至无锡县食品公司。近些年，周玲英和儿子周峰开始开公司，住到无锡市区一栋复式住宅里。尽管很少能看到他们回乡，但关于周玲英等人开矿、卖消防器材、替油田采购设备、在全国有3000加油站等传闻，混杂着村民对周家财富的想象，在厚桥漫天飞，真假难辨。/2007年12月，周玲英出资5000万元，成立北京宏汉投资有限公司。数年内，该公司先后投资了北京宏元达投资发展有限公司、北京瑞丰勘查有限责任公司、北京信远宏大投资有限公司、北京鸿丰投资股份有限公司。/北京鸿丰投资和中石油四川石油管理局旗下的四川华油共同出资设立四川邛崃市鸿丰钾矿肥有限公司。2011年，鸿丰钾肥被置入成都高投集团控股的上市公司高新发展（000628.SZ），鸿丰钾肥的资产预估中，无形资产一项的账目价值为5071.25万元，预估的价值却到了7.6亿元，最为核心的增值资产是平落坝的采矿权。/2010年2月，周玲英出资1900万元成立江阴奔跃，占股95%，这是江阴市唯一的奥迪4S经销商。北京一位汽车经销商说，“（奥迪4s店）不是有钱就能开的，你的关系得足够有撼动力，甚至据说大众中国和奥迪中国的高层都插不上手。”/2012年，由昆仑能源控股97.26%的新疆新捷股份公司在江苏成立江苏中油昆仑能源投资有限"
+        information: "周永康三弟媳，北京宏汉实油昆仑能源投资有限"
     },
     {
         id: "P11",
@@ -91,7 +91,7 @@ var PList = [{
         id: "P15",
         name: "杨春法",
         photo: "",
-        information: "周永康长子，出生于1972年。/曾任北京中旭阳光能源科技股份有限公司董事长，从事倒卖油田及油井设备、能源信息化生意，亦以妻子黄婉、岳母詹敏利的名义参股四川商人吴兵、刘汉等的旅游和水电开发，并与白手套米晓东一起涉足北京房地产生意。周滨“身材高大，眼睛细长”，本科毕业于西南石油大学，与落马的中石油高管李华林、王道富和冉新权等是校友。周滨1993年前后赴石油公司聚集的美国德州大学达拉斯分校攻读石油相关专业的研究生学位,他还持有美国飞机驾驶牌（FAA牌照）。/周滨的大学同学称，周滨在美国留学期间就开始做些生意，比如通过关系将外资的石油设备卖给中国的石油企业，令同学们“羡慕不已”。不过，周滨还是顺利毕业，甚至获得了荣誉学生的奖励。/在德州，周滨遇到了后来的妻子黄婉。两人婚后育有两个孩子。2001年后，周滨夫妇将重心转移到国内。周滨回国后曾在全球知名的油田服务公司斯伦贝谢供职，当时他的名片职务是“工程师”。/知情人士称“2003年前后，周滨开始创立自己的公司。当时的印象还比较低调、随和”。/周滨不是一个成功的企业家，他的主要生意方式是以低价获得稀缺资源和合同，然后再高价卖出——这种方式在计划经济时代被称为“投机倒把”，1980年代后成为一种“官二代”常见的商业盈利模式。/周滨曾在2007年前后以一两千万元低价获得长庆油田高产区块，转手倒卖获得5.5亿元暴利。这也成为中石油高管落马的重要线索。/“倒卖油田这种事，都是拼背景，但是谁有周滨硬呢？我们最后只能甘拜下风。”一位曾经与周滨竞争同一项目的人士向财新记者说到。/2009年底，周滨受让其岳母詹敏利持有的中旭阳光石油天"
+        information: "周永康长子，出生于1972年。/曾任北京中旭阳光能源科技股份有限公司董事长"
     },
     {
         id: "P16",
@@ -145,7 +145,7 @@ var PList = [{
         id: "P24",
         name: "詹阳斌",
         photo: "",
-        information: "周永康三弟媳，北京宏汉实际控制人，鸿丰钾矿大股东。江阴奔跃奥迪4S店老板，与中石油旗下昆仑能源合资成立无锡中油，销售液化天然气。/周玲英个矮，人称“矮玲英”，是无锡锡山区厚桥街道的西前头村北安乐桥人。其父做过无锡县坊前镇党委书记、无锡县商业局长。丈夫周元青是惠山区国土局副局长，周玲英则长袖善舞。她先在厚桥供销社做营业员，后去厚桥食品站，做过站长，再调至无锡县食品公司。近些年，周玲英和儿子周峰开始开公司，住到无锡市区一栋复式住宅里。尽管很少能看到他们回乡，但关于周玲英等人开矿、卖消防器材、替油田采购设备、在全国有3000加油站等传闻，混杂着村民对周家财富的想象，在厚桥漫天飞，真假难辨。/2007年12月，周玲英出资5000万元，成立北京宏汉投资有限公司。数年内，该公司先后投资了北京宏元达投资发展有限公司、北京瑞丰勘查有限责任公司、北京信远宏大投资有限公司、北京鸿丰投资股份有限公司。/北京鸿丰投资和中石油四川石油管理局旗下的四川华油共同出资设立四川邛崃市鸿丰钾矿肥有限公司。2011年，鸿丰钾肥被置入成都高投集团控股的上市公司高新发展（000628.SZ），鸿丰钾肥的资产预估中，无形资产一项的账目价值为5071.25万元，预估的价值却到了7.6亿元，最为核心的增值资产是平落坝的采矿权。/2010年2月，周玲英出资1900万元成立江阴奔跃，占股95%，这是江阴市唯一的奥迪4S经销商。北京一位汽车经销商说，“（奥迪4s店）不是有钱就能开的，你的关系得足够有撼动力，甚至据说大众中国和奥迪中国的高层都插不上手。”/2012年，由昆仑能源控股97.26%的新疆新捷股份公司在江苏成立江苏中油昆仑能源投资有限"
+        information: "周永康三弟媳，北京宏汉实际油站等传闻，混杂着村民对周家财富的想象，在厚桥漫天飞，真假难辨。/2007年12月，周玲英出资5000万元，成立北京宏汉投资有限公司。数年内，该公司先后投资了北京宏元达投资发展有限公司、北京瑞丰勘查有限责任公司、北京信远宏大投资有限公司、北京鸿丰投资股份有限公司。/北京鸿丰投资和中石油四川石油管理局旗下的四川华油共同出资设立四川邛崃市鸿丰钾矿肥有限公司。2011年，鸿丰钾肥被置入成都高投集团控股的上市公司高新发展（000628.SZ），鸿丰钾肥的资产预估中，无形资产一项的账目价值为5071.25万元，预估的价值却到了7.6亿元，最为核心的增值资产是平落坝的采矿权。/2010年2月，周玲英出资1900万元成立江阴奔跃，占股95%，这是江阴市唯一的奥迪4S经销商。北京一位汽车经销商说，“（奥迪4s店）不是有钱就能开的，你的关系得足够有撼动力，甚至据说大众中国和奥迪中国的高层都插不上手。”/2012年，由昆仑能源控股97.26%的新疆新捷股份公司在江苏成立江苏中油昆仑能源投资有限"
     },
     {
         id: "P25",
@@ -172,7 +172,7 @@ var PList = [{
         information: "又名吴永富，出生于1963年，中旭（香港）有限公司董事长，周滨白手套，负责打理周家水利、高速公路以及影视等生意，2013年8月在北京西客站被带走调查。/吴兵生于成都，从1997年开始即持有来往港澳通行证，吴兵是他在香港身份证的名字，对应在中国内地的户籍系统中，他是吴永富。吴兵的香港身份证号又与一个名叫“李若尘”的人相同。/在成都，吴兵是中旭投资有限公司董事长，主要从事水电站、高速公路等基础设施投资，曾拥有总装机70万千瓦、投资53亿元的大渡河龙头石水电站和总装机45万千瓦、投资32亿元的革什扎水电站；他的另一家公司——中旭盛世风华投资有限公司注册在北京，从事影视投资。在北京，两家名称冠以中旭阳光的能源科技和石油服务公司，亦在石油信息化和石油钻采设备维修领域获得大单。吴兵旗下的水电站能从央企口中夺水头，文化娱乐公司走红色路线。吴兵早年间在成都还开发过文殊芳园等一些小楼盘。这些项目从外面看其貌不扬，内里装修却很高档，早年间文殊芳园开发建成后，一些政法领域官员入住其中，房屋产权往往登记在家属名下。2012年底四川官商窝案爆发后，有些房屋又通过二手房交易方式转让回吴兵家族成员名下。"
     }
 ];
-var CList = [{
+var CList_11 = [{
         id: "C0",
         name: "北京五洲医院投资有限公司",
         m: "A",
@@ -476,7 +476,7 @@ var CList = [{
 
 
 ];
-var CCList = [{
+var CCList_11 = [{
     c1: "C1",
     to: ">",
     c2: "C2",
@@ -602,7 +602,7 @@ var CCList = [{
     c2: "C43",
     m: "A"
 }];
-var CPList = [{
+var CPList_11 = [{
     c: "C0",
     to: "=",
     p: "P0",
@@ -1011,7 +1011,7 @@ var CPList = [{
 
 
 
-var PPList = [{
+var PPList_11 = [{
     p1: "P16",
     to: ">",
     p2: "P28",
@@ -1137,13 +1137,13 @@ var PPList = [{
     p2: "P22",
     m: "B"
 }];
-var PS = ["P1", "P15", "P0", "P2", "P3", "P4", "P5", "P6", "P9",
+var PS_11 = ["P1", "P15", "P0", "P2", "P3", "P4", "P5", "P6", "P9",
     "P7", "P10", "P18", "P11", "P12", "P14", "P8", "P20", "P22", "P21", "P24", "P25", "P26", "P16",
     "P28", "P27", "P23", "P19", "P17",
     "P13"
 ];
 
-var CS = ["C30", "C31", "C56", "C32", "C33", "C34", "C35", "C36",
+var CS_11 = ["C30", "C31", "C56", "C32", "C33", "C34", "C35", "C36",
     "C38", "C39", "C40", "C41",
 
     "C37", "C54", "C55",
@@ -1156,8 +1156,8 @@ var CS = ["C30", "C31", "C56", "C32", "C33", "C34", "C35", "C36",
     "C20", "C21", "C29", "C42", "C44", "C45", "C46", "C47", "C48", "C49",
     "C50", "C51", "C52", "C53"
 ];
-var BGColor = "#252525";
-var PPMColor = [{
+var BGColor_11 = "#252525";
+var PPMColor_11 = [{
         "m": "A",
         "name": "直系亲属",
         "color": "#fc3c3c"
@@ -1174,7 +1174,7 @@ var PPMColor = [{
 ];
 var CPColor = "#4d4d4d";
 var WeakenColor = "#666";
-var CCMColor = [{
+var CCMColor_11 = [{
     "m": "A",
     "name": "投资",
     "color": "#ffff99"
@@ -1187,7 +1187,7 @@ var CCMColor = [{
     "name": "",
     "color": "#6856de"
 }];
-var CMColor = [{
+var CMColor_11 = [{
     "m": "B",
     "name": "莆田系医院",
     "color": "#93bbd5"
@@ -1206,7 +1206,7 @@ var CMColor = [{
 }];
 document
     .write("<div style='background-color:" +
-        BGColor +
+        BGColor_11 +
         ";width:100%;'><div id='firstDiv'><canvas id='firstCanvas'></canvas></div></div>");
 var WIDTH = 1240;
 var HEIGHT = 750;
@@ -1228,7 +1228,7 @@ $(document)
                 "display": "block",
                 "margin-left": "auto",
                 "margin-right": "auto",
-                "background-color": BGColor
+                "background-color": BGColor_11
             });
             var canvas = document.getElementById("firstCanvas");
             var main = canvas.getContext("2d");
@@ -1299,7 +1299,7 @@ $(document)
                         60 + this.offsetY + this.startY,
                         this.maxWidth)
                 }
-                main.fillStyle = BGColor;
+                main.fillStyle = BGColor_11;
                 main.fillRect(this.x, 0, this.maxWidth + 30, this.y +
                     this.top);
                 main.fillRect(this.x, this.y + this.bottom,
@@ -1585,7 +1585,7 @@ $(document)
                 for (var i = 0; i < CCArray.length; i++) {
                     if (CCArray[i].c1.id == this.id) {
                         CCArray[i].display();
-                        var c2 = getCByID(CCList[i].c2);
+                        var c2 = getCByID(CCList_11[i].c2);
                         c2.connectChildren();
                     }
                 }
@@ -1595,7 +1595,7 @@ $(document)
                 for (var i = 0; i < CCArray.length; i++) {
                     if (CCArray[i].c2.id == this.id) {
                         CCArray[i].display();
-                        var c1 = getCByID(CCList[i].c1);
+                        var c1 = getCByID(CCList_11[i].c1);
                         c1.connectParent();
                         c1.connectP();
                     }
@@ -1769,18 +1769,18 @@ $(document)
             var CCArray = new Array();
             var logoAndLegend = new LogoAndLegend();
             var info = new INFO();
-            for (var i = 0; i < PS.length; i++) {
+            for (var i = 0; i < PS_11.length; i++) {
                 var space = 20;
                 var x = 20;
                 var y = 100;
-                if (PS[i] != "") {
-                    if (PS[i].charAt(0) == "G") {
-                        var g = new G(PS[i].slice(1));
+                if (PS_11[i] != "") {
+                    if (PS_11[i].charAt(0) == "G") {
+                        var g = new G(PS_11[i].slice(1));
                         g.x = x + i * space;
                         g.y = y;
                         GArray.push(g)
                     } else {
-                        var pData = getPDataByID(PS[i]);
+                        var pData = getPDataByID(PS_11[i]);
                         var p = new P(pData.id, pData.name,
                             pData.photo, pData.information);
                         p.x = x + 280 + i * 1.1 * space;
@@ -1793,9 +1793,9 @@ $(document)
             var x1 = 0;
             var x2 = 0;
             var y = 400;
-            for (var i = 0; i < CS.length; i++) {
-                if (CS[i] != "TOP_SPACE" && CS[i] != "BOTTOM_SPACE") {
-                    var cData = getCDataByID(CS[i]);
+            for (var i = 0; i < CS_11.length; i++) {
+                if (CS_11[i] != "TOP_SPACE" && CS_11[i] != "BOTTOM_SPACE") {
+                    var cData = getCDataByID(CS_11[i]);
                     var c = new C(cData.id, cData.name, cData.m,
                         cData.information);
                     if (cData.m == "") {
@@ -1811,7 +1811,7 @@ $(document)
                     }
                     CArray.push(c);
                 } else {
-                    if (CS[i] == "TOP_SPACE") {
+                    if (CS_11[i] == "TOP_SPACE") {
                         x1 += space;
                     } else {
                         x2 += space;
@@ -1819,39 +1819,39 @@ $(document)
                 }
             }
 
-            function CtoPs(c) {
-                for (var i = 0; i < CPList.length; i++) {
-                    if (CPList[i].c == c) {
+            function CtoPS_11(c) {
+                for (var i = 0; i < CPList_11.length; i++) {
+                    if (CPList_11[i].c == c) {
                         return true
                     }
                 }
                 return false
             }
 
-            function CtoCs(c) {
-                for (var i = 0; i < CCList.length; i++) {
-                    if (CCList[i].c1 == c) {
+            function CtoCS(c) {
+                for (var i = 0; i < CCList_11.length; i++) {
+                    if (CCList_11[i].c1 == c) {
                         return true
                     }
                 }
                 return false
             }
-            for (var i = 0; i < PPList.length; i++) {
-                var p1 = getPByID(PPList[i].p1);
-                var p2 = getPByID(PPList[i].p2);
-                var pp = new PP(p1, PPList[i].to, p2, PPList[i].m);
+            for (var i = 0; i < PPList_11.length; i++) {
+                var p1 = getPByID(PPList_11[i].p1);
+                var p2 = getPByID(PPList_11[i].p2);
+                var pp = new PP(p1, PPList_11[i].to, p2, PPList_11[i].m);
                 PPArray.push(pp)
             }
-            for (var i = 0; i < CPList.length; i++) {
-                var c = getCByID(CPList[i].c);
-                var p = getPByID(CPList[i].p);
-                var cp = new CP(c, CPList[i].to, p, CPList[i].m);
+            for (var i = 0; i < CPList_11.length; i++) {
+                var c = getCByID(CPList_11[i].c);
+                var p = getPByID(CPList_11[i].p);
+                var cp = new CP(c, CPList_11[i].to, p, CPList_11[i].m);
                 CPArray.push(cp)
             }
-            for (var i = 0; i < CCList.length; i++) {
-                var c1 = getCByID(CCList[i].c1);
-                var c2 = getCByID(CCList[i].c2);
-                var cc = new CC(c1, CCList[i].to, c2, CCList[i].m);
+            for (var i = 0; i < CCList_11.length; i++) {
+                var c1 = getCByID(CCList_11[i].c1);
+                var c2 = getCByID(CCList_11[i].c2);
+                var cc = new CC(c1, CCList_11[i].to, c2, CCList_11[i].m);
                 CCArray.push(cc)
             }
             window.requestAnimFrame = (function() {
@@ -1939,12 +1939,12 @@ $(document)
                         CCArray[i].display();
                         if (clickObject != null &&
                             CCArray[i].c1.id == clickObject.id) {
-                            var c1 = getCByID(CCList[i].c1);
+                            var c1 = getCByID(CCList_11[i].c1);
                             c1.connectChildren()
                         }
                         if (clickObject != null &&
                             CCArray[i].c2.id == clickObject.id) {
-                            var c2 = getCByID(CCList[i].c2);
+                            var c2 = getCByID(CCList_11[i].c2);
                             c2.connectParent();
                             c2.connectChildren()
                         }
@@ -1960,9 +1960,9 @@ $(document)
             })();
 
             function getPDataByID(id) {
-                for (var i = 0; i < PList.length; i++) {
-                    if (PList[i].id == id) {
-                        return PList[i]
+                for (var i = 0; i < PList_11.length; i++) {
+                    if (PList_11[i].id == id) {
+                        return PList_11[i]
                     }
                 }
             }
@@ -1976,9 +1976,9 @@ $(document)
             }
 
             function getCDataByID(id) {
-                for (var i = 0; i < CList.length; i++) {
-                    if (CList[i].id == id) {
-                        return CList[i]
+                for (var i = 0; i < CList_11.length; i++) {
+                    if (CList_11[i].id == id) {
+                        return CList_11[i]
                     }
                 }
             }
@@ -2036,11 +2036,11 @@ $(document)
             }
 
             function PPMLegend(x, y, space) {
-                for (var i = 0; i < PPMColor.length; i++) {
+                for (var i = 0; i < PPMColor_11.length; i++) {
                     main.globalAlpha = 1;
-                    main.fillStyle = PPMColor[i].color;
+                    main.fillStyle = PPMColor_11[i].color;
                     main.fillRect(x - 8, y - 1, 16, 2);
-                    if (PPMColor[i].m != "A") {
+                    if (PPMColor_11[i].m != "A") {
                         main.fillStyle = "#fff";
                         main.beginPath();
                         main.arc(x, y, 2.5, 0, Math.PI * 2);
@@ -2048,20 +2048,20 @@ $(document)
                     }
                     main.fillStyle = "#ccc";
                     main.font = "12px 'Microsoft YaHei', 微软雅黑";
-                    main.fillText(PPMColor[i].name, x + 14, y + 4);
-                    x += main.measureText(PPMColor[i].name).width +
+                    main.fillText(PPMColor_11[i].name, x + 14, y + 4);
+                    x += main.measureText(PPMColor_11[i].name).width +
                         space
                 }
             }
 
             function CCMLegend(x, y, space) {
-                for (var i = 0; i < CCMColor.length; i++) {
-                    if (CCMColor[i].name != "") {
+                for (var i = 0; i < CCMColor_11.length; i++) {
+                    if (CCMColor_11[i].name != "") {
                         main.globalAlpha = 1;
-                        main.fillStyle = CCMColor[i].color;
+                        main.fillStyle = CCMColor_11[i].color;
                         main.fillRect(x - 8, y - 1, 16, 2);
 
-                        if (CCMColor[i].m != "A") {
+                        if (CCMColor_11[i].m != "A") {
                             main.fillStyle = "#fff";
                             main.beginPath();
                             main.arc(x, y, 2.5, 0, Math.PI * 2);
@@ -2074,8 +2074,8 @@ $(document)
                         main.fill();*/
                         main.fillStyle = "#ccc";
                         main.font = "12px 'Microsoft YaHei', 微软雅黑";
-                        main.fillText(CCMColor[i].name, x + 14, y + 4);
-                        x += main.measureText(CCMColor[i].name).width +
+                        main.fillText(CCMColor_11[i].name, x + 14, y + 4);
+                        x += main.measureText(CCMColor_11[i].name).width +
                             space;
                     }
 
@@ -2085,36 +2085,36 @@ $(document)
             function CMLegend(x, y, space) {
                 for (var i = 0; i < 2; i++) {
                     main.globalAlpha = 1;
-                    main.fillStyle = CMColor[i].color;
+                    main.fillStyle = CMColor_11[i].color;
                     main.fillRect(x - 4, y - 4, 8, 8);
                     main.fillStyle = "#ccc";
                     main.font = "12px 'Microsoft YaHei', 微软雅黑";
-                    main.fillText(CMColor[i].name, x + 14, y + 4);
-                    x += main.measureText(CMColor[i].name).width +
+                    main.fillText(CMColor_11[i].name, x + 14, y + 4);
+                    x += main.measureText(CMColor_11[i].name).width +
                         space
                 }
             }
 
             function getColorByPPM(m) {
-                for (var i = 0; i < PPMColor.length; i++) {
-                    if (PPMColor[i].m == m) {
-                        return PPMColor[i].color
+                for (var i = 0; i < PPMColor_11.length; i++) {
+                    if (PPMColor_11[i].m == m) {
+                        return PPMColor_11[i].color
                     }
                 }
             }
 
             function getColorByCCM(m) {
-                for (var i = 0; i < CCMColor.length; i++) {
-                    if (CCMColor[i].m == m) {
-                        return CCMColor[i].color
+                for (var i = 0; i < CCMColor_11.length; i++) {
+                    if (CCMColor_11[i].m == m) {
+                        return CCMColor_11[i].color
                     }
                 }
             }
 
             function getColorByCM(m) {
-                for (var i = 0; i < CMColor.length; i++) {
-                    if (CMColor[i].m == m) {
-                        return CMColor[i].color
+                for (var i = 0; i < CMColor_11.length; i++) {
+                    if (CMColor_11[i].m == m) {
+                        return CMColor_11[i].color
                     }
                 }
             }
