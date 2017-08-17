@@ -1133,7 +1133,7 @@ document
 				+ BGColor
 				+ ";width:100%;'><div id='mainDiv'><canvas id='mainCanvas'></canvas></div></div>");
 var WIDTH = 1240;
-var HEIGHT = 750;
+var HEIGHT = 715;
 var time = 0;
 var mouseX = 0;
 var mouseY = 0;
@@ -1307,7 +1307,7 @@ $(document)
 				this.PPMLegendX = 20 + cenNum;
 				this.CCMLegendX = 250 + cenNum;
 				this.CMLegendX = 450 + cenNum;
-				this.LegendY = 710;
+				this.LegendY = 675;
 				this.y = 20;
 			};
 			LogoAndLegend.prototype.display = function() {
@@ -1510,6 +1510,9 @@ $(document)
 						CCArray[i].display();
 						var c2 = getCByID(CCList[i].c2);
 						c2.connectChildren();
+						if(c2.m == "A"){
+							c2.connectP();
+						}
 					}
 				}
 			};
@@ -1520,6 +1523,9 @@ $(document)
 						CCArray[i].display();
 						var c1 = getCByID(CCList[i].c1);
 						c1.connectParent();
+						if(c1.m == "A"){
+							c1.connectChildren();
+						}
 						c1.connectP();
 					}
 				}
@@ -1694,7 +1700,7 @@ $(document)
 			for ( var i = 0; i < PS.length; i++) {
 				var space = 20;
 				var x = 20;
-				var y = 100;
+				var y = 65;
 				if (PS[i] != "") {
 					if (PS[i].charAt(0) == "G") {
 						var g = new G(PS[i].slice(1));
@@ -1714,7 +1720,7 @@ $(document)
 			var space = 20;
 			var x1 = 0;
 			var x2 = 0;
-			var y = 400;
+			var y = 360;
 			for ( var i = 0; i < CS.length; i++) {
 				if (CS[i] != "TOP_SPACE" && CS[i] != "BOTTOM_SPACE") {
 					var cData = getCDataByID(CS[i]);

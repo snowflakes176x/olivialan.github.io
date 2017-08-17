@@ -912,7 +912,7 @@ function() {
 			}
 		} else {
 			info.name = "";
-			info.text = ""
+			info.text = "";
 		}
 		info.offsetY = 0
 	};
@@ -921,7 +921,7 @@ function() {
 		this.lineHeight = 16
 	};
 	C.prototype.click = function() {
-		clickObject = this
+		clickObject = this;
 	};
 	C.prototype.connectChildren = function() {
 		this.weaken = false;
@@ -930,6 +930,10 @@ function() {
 				CCArray[i].display();
 				var c2 = getCByID(CCList2[i].c2);
 				c2.connectChildren();
+				if(c2.m == "A"){
+					c2.connectP();
+				}
+				
 			}
 		}
 	};
@@ -940,6 +944,10 @@ function() {
 				CCArray[i].display();
 				var c1 = getCByID(CCList2[i].c1);
 				c1.connectParent();
+				if(c1.m == "A"){
+					c1.connectChildren();
+				}
+				
 				c1.connectP();
 			}
 		}
@@ -1354,42 +1362,43 @@ function() {
 				if (clickObject != null
 						&& CCArray[i].c1.id == clickObject.id) {
 					var c1 = getCByID(CCList2[i].c1);
-					c1.connectChildren()
+					c1.connectChildren();
+					
 				}
 				if (clickObject != null
 						&& CCArray[i].c2.id == clickObject.id) {
 					var c2 = getCByID(CCList2[i].c2);
 					c2.connectParent();
-					c2.connectChildren()
+					c2.connectChildren();
 				}
 			}
 		}
 		for ( var i = 0; i < PArray.length; i++) {
-			PArray[i].display()
+			PArray[i].display();
 		}
 		for ( var i = 0; i < CArray.length; i++) {
-			CArray[i].display()
+			CArray[i].display();
 		}
-		time++
+		time++;
 	})();
 	function getPDataByID(id) {
 		for ( var i = 0; i < PList2.length; i++) {
 			if (PList2[i].id == id) {
-				return PList2[i]
+				return PList2[i];
 			}
 		}
 	}
 	function getPByID(id) {
 		for ( var i = 0; i < PArray.length; i++) {
 			if (PArray[i].id == id) {
-				return PArray[i]
+				return PArray[i];
 			}
 		}
 	}
 	function getCDataByID(id) {
 		for ( var i = 0; i < CList2.length; i++) {
 			if (CList2[i].id == id) {
-				return CList2[i]
+				return CList2[i];
 			}
 		}
 	}
