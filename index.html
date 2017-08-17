@@ -3,6 +3,7 @@
 <head>
     <title>莆田医网</title>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=1363, maximum-scale=1.0,user-scalable=yes,target-densitydpi=device-dpi">
     <script src="./map/echarts.min.js"></script>
     <script type="text/javascript" src="./group1/WebContent/js/jquery-1.11.1.js"></script>
     <script src="./map/china.js"></script>
@@ -10,7 +11,7 @@
     <script type="text/javascript" src="./map/jquery-3.2.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="bootstrap-select.min.css">
+    
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="bootstrap-select.min.js"></script>
@@ -19,14 +20,15 @@
     <script src="data.js"></script>
 
     <!-- (Optional) Latest compiled and minified JavaScript translation files  -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="loaders.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="bootstrap-select.min.css">
+	<link href="头像.png" type="image/x-icon" rel="shortcut icon" />
     <style>
         h3 {
             color: #add2e2
@@ -39,8 +41,8 @@
         
         #beginning {
             width: 100%;
-            height: 400px;
-            margin-bottom: 300px;
+            height: 600px;
+            margin-bottom: 7%;
         }
         
         .first {
@@ -68,10 +70,11 @@
             width: 100%;
             height: 500px;
             margin: 0%;
-            /* background-color: #272727; */
-            background-image: url("./img/background.jpg")
+            background-image: url("./img/background2.jpg");
+			background-repeat:no-repeat; 
+			background-position:center;
+			-moz-background-size:100% 100%; 
         }
-        
         #result {
             color: gray;
             font-size: 14px;
@@ -144,6 +147,7 @@
             width: 50%;
             height: 600px;
             margin-left: 120px;
+			vertical-align: top;
         }
         
         .right {
@@ -151,15 +155,18 @@
             width: 20%;
             height: 400px;
             margin-right: 150px;
+			margin-top: 12%;
             line-height: 200%;
             font-size: 16px;
+			vertical-align: top;
         }
         
         .left2 {
             display: inline-block;
             width: 50%;
-            height: 700px;
+            height: 650px;
             margin-left: 120px;
+			vertical-align: top;
         }
         
         .right2 {
@@ -167,12 +174,13 @@
             width: 27%;
             height: 400px;
             margin-right: 150px;
+			margin-top: 10%;
             line-height: 200%;
             font-size: 16px;
+			vertical-align: top;
         }
-        
         body {
-            background-color: #252525
+            background-color: #252525;
         }
     </style>
 </head>
@@ -180,7 +188,7 @@
 <body>
     <div id="bigbig">
         <div id="beginning">
-            <img src="toppic.jpg" style="width:100%"></img>
+            <img src="toppic.jpg" style="width:100%;height:100%"></img>
             <!--放头图-->
         </div>
         <div class="first">
@@ -611,7 +619,7 @@
 
 
         <div class="left">
-            <img src="【图】詹家2.jpg" style="width:90%"></img>
+            <img src="【图】詹家2.jpg" style="width:90%;height:100%"></img>
         </div>
         <div class="right">
             <p style="color:#add2e2;font-size:26px;">詹</p>
@@ -627,18 +635,16 @@
         <br>
         <br>
         <br>
-        <div class="left2">
-            <img src="【图】林家.jpg" style="width:90%"></img>
-        </div>
-        <div class="right2">
-            <p style="color:#add2e2;font-size:26px;">林</p>
-            <p></p>
-            <p></p>
-            <p>林氏关系网中，林玉明处于中心位置，其他处于节点位置的也多为林氏成员，家族特点浓厚，结构紧密；詹氏出现频次很低，且地位相对弱势。</p>
-            <br>
-            <p>陈氏虽然人员众多，但基本分散在两大家族的关系网中，此前曾有报道称，陈氏在四大家族中最为低调，但投资范围颇广，在各大家族之间，游刃有余。黄氏在该关系网中的地位相对其他三个家族，十分弱势。</p>
-        </div>
-
+		<div class="left2">
+			<img src="【图】林家.jpg" style="width:90%;height:95%"></img>
+		</div>
+		<div class="right2">
+			<p style="color:#add2e2;font-size:26px;">林</p>
+			<p></p>
+			<p></p>
+			<p>林氏关系网中，林玉明处于中心位置，其他处于节点位置的也多为林氏成员，家族特点浓厚，结构紧密；詹氏出现频次很低，且地位相对弱势。</p><br>
+			<p>陈氏虽然人员众多，但基本分散在两大家族的关系网中，此前曾有报道称，陈氏在四大家族中最为低调，但投资范围颇广，在各大家族之间，游刃有余。黄氏在该关系网中的地位相对其他三个家族，十分弱势。</p>
+		</div>
         <div class="group2">
             <script type="text/javascript" src="./GROUP1+2/WebContent/js/group2.js"></script>
         </div>
@@ -658,11 +664,11 @@
             <p>2.凤凰网共收录441家莆田系医院，其中能够查询到有效信息的医院共374家，故有效数据为374家。
             </p>
             <p>3.参考报道:</p>
-            <p> 《【独家】莆田医帮“带头大哥”陈德良》，中国企业家网， http://www.iceo.com.cn/com2013/2015/0605/299414.shtml </p>
-            <p> 《福建莆田医疗资本浮现四大家族 切全国半壁江山》，网易新闻中心， http://news.163.com/09/0212/10/51UP4BSV0001124J.html</p>
+            <p>《【独家】莆田医帮“带头大哥”陈德良》，中国企业家网， http://www.iceo.com.cn/com2013/2015/0605/299414.shtml </p>
+            <p>《福建莆田医疗资本浮现四大家族 切全国半壁江山》，网易新闻中心， http://news.163.com/09/0212/10/51UP4BSV0001124J.html</p>
+            <p>《周永康的人与财》，财新网，http://datanews.caixin.com/2014/zhoushicailu/</p>
             </p>
             <p>4.介数（betweenness），衡量该个体在关系中的连接性，以方块大小表示，数值越大，表示其作为组织中的桥梁存在，掌握更多信息；连接数量程度（degree），衡量该个体强度，以颜色深浅表示，即颜色越深，代表和更多人交往</p>
-            <p>5.感谢财新网的灵感支持。</p>
             <br>
             <br>
         </div>
