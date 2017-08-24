@@ -2,6 +2,10 @@
  * Variable power
  */
 
+#toutu {
+    width: 100%;
+}
+
 * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
